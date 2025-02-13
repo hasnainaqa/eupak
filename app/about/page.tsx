@@ -2,11 +2,7 @@ import Image from "next/image"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 
 export default function About() {
-  const teamMembers = [
-    { name: "John Doe", role: "Founder & CEO", image: "/placeholder.svg" },
-    { name: "Jane Smith", role: "Education Consultant", image: "/placeholder.svg" },
-    { name: "Mike Johnson", role: "Visa Specialist", image: "/placeholder.svg" },
-  ]
+  
 
   const achievements = [
     "95% visa success rate",
@@ -63,26 +59,6 @@ export default function About() {
         </CardContent>
       </Card>
 
-      <h2 className="text-3xl font-bold mb-8 text-center">Our Team</h2>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-        {teamMembers.map((member, index) => (
-          <Card key={index}>
-            <CardHeader>
-              <Image
-                src={member.image || "/placeholder.svg"}
-                alt={member.name}
-                width={300}
-                height={300}
-                className="rounded-full mx-auto"
-              />
-            </CardHeader>
-            <CardContent className="text-center">
-              <CardTitle>{member.name}</CardTitle>
-              <CardDescription>{member.role}</CardDescription>
-            </CardContent>
-          </Card>
-        ))}
-      </div>
 
       <h2 className="text-3xl font-bold mb-8 text-center">Our Achievements</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
