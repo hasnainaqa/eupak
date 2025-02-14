@@ -11,8 +11,10 @@ const inter = Inter({ subsets: ["latin"] })
 export const metadata: Metadata = {
   title: "EuPak Educational Consultant",
   description: "Your gateway to educational opportunities in Europe",
+  icons: {
+    icon: "/favicon.svg", 
+  },
 }
-
 export default function RootLayout({
   children,
 }: {
